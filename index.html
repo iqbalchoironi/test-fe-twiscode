@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>L'OCCITANE</title>
+</head>
+<body>
+    <header class="showcase">
+            <img src="./logo.png" alt="" />
+            <a href="#" class="btn btn-rounded">Language :</a>
+    </header>
+    <section class="notif gold">
+        <p>You dont have an account yet, please create a new account</p>
+    </section>
+
+    <div class="container">
+        <form>
+        <section class="form">
+            <h1>Create new account</h1>
+            <label>Title</label>
+            <div class="inline-radio">
+                <div class="radio-wrap">
+                    <input style="margin-right: .5rem;" type="radio" id="mrs" value="mrs" name="title">
+                    <span for="male">Mrs</span>
+                </div>
+                
+                <div class="radio-wrap">
+                    <input style="margin-right: .5rem;" type="radio" id="ms" value="ms" name="title">
+                    <span for="dewey">Ms</span>
+                </div>
+                
+                <div class="radio-wrap">
+                    <input style="margin-right: .5rem;" type="radio"id="mdm" value="mdm" name="title">
+                    <span for="louie">Mdm</span>
+                </div>
+    
+                <div class="radio-wrap">
+                    <input style="margin-right: .5rem;" type="radio"id="mr" value="mr" name="title">
+                    <span for="louie">Mr</span>
+                </div>
+    
+                <div class="radio-wrap">
+                    <input style="margin-right: .5rem;" type="radio"id="Dr" value="Dr" name="title">
+                    <span for="louie">Dr</span>
+                </div>
+            </div>
+            <div class="inline-form sbetween">
+                <div class="width40 ">
+                    <label for="">Last Name</label>
+                    <input placeholder="Last Name" class="full-width" type="text" name="lastName"/>
+                </div>
+                <div class="width40">
+                    <label for="">First Name</label>
+                    <input placeclass="First Name" class="full-width" type="text" name="firstName"/>
+                </div>
+            </div>
+    
+            <div class="inline-form">
+                <select id="country1">
+                    <option value="" disabled selected>Country</option>
+                </select>
+                <div>
+                    <span id="number"></span>
+                    <input name="number" placeholder="number">
+                </div>
+            </div>
+    
+            <h1>Addres</h1>
+            <div>
+                <label for="">Address</label>
+                <input placeholder="Address" class="full-width" name="address">
+            </div>
+            <div class="inline-form sbetween">
+                <div class="width40">
+                    <label for="">Country/Location</label>
+                    <select class="full-width" name="country" id="country2">
+                        <option value="" disabled selected>Country/Location</option>
+                    </select>
+                </div>
+                <div class="width40">
+                    <label for="">Province/Disctric</label>
+                    <select class="full-width" name="province" id="provincie">
+                        <option value="" disabled selected>Province/Disctric</option>
+                    </select>
+                </div>
+            </div>
+    
+            <h1>Contact</h1>
+            <div class="inline-form sbetween">
+                <div class="full-width">
+                    <label for="">Email Address</label>
+                    <input placeholder="Email Address" class="full-width" type="email" name="email">
+                </div>
+                <div class="full-width inline-form sbetween">
+                    <div class="full-width">
+                        <label for="">Date of birth</label>
+                        <select class="full-width" name="day" id="day">
+                            <option value="" disabled selected>day</option>
+                        </select>
+                    </div>
+                    <div class="full-width">
+                        <label for="">Month</label>
+                        <input class="full-width" type="month" name="month" id="">
+                    </div>
+                    <div class="full-width">
+                        <label for="">Year</label>
+                        <input class="full-width" type="text" name="year" id="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-8">
+            <h3>Standart Privacy Note</h3>
+            <p>
+                I warrant that the above information is true and correct. I understand that failure to answer all questions linsted in this aplication form may
+                prevent L'OCCITANE from processing my aplication: and L'OCCITANE may refuse to accept this aplication in the right of my individual
+                circumstance
+            </p>
+            <p>
+                I understand that information collected will be used and retrained bu L'OCCITANE for the purpose of (i) my application of membership
+                program of L'OCCITANE (ii) providing member-exclusive: and (iii) the daily management operation and maintenance of membership
+                account at L'OCCITANE
+            </p>
+            <p>
+                I understand that is nexessary for me to provide L'OCCITANE with data in connection with the privilage. Failure to provide such data may result
+                in L'OCCITANE stores or official website.
+            </p>
+            <p>
+                L'OCCITANE reseves the right to change any of the terms and conditions without priot notice. Change will be posted on signage placed at
+                L'OCCITANE stores or official website.
+            <p>
+                I understand that information collected will be used and retrained bu L'OCCITANE for the purpose of (i) my application of membership
+                program of L'OCCITANE (ii) providing member-exclusive: and (iii) the daily management operation and maintenance of membership
+                account at L'OCCITANE.
+            </p>
+        </section>
+        <p>
+            I want to receive information or communication from L'OCCITANE
+        </p>
+        <section class="inline-form full-width sbetween mb-8">
+            <div>
+                <span>SMS and Mobile Call</span>
+                <label class="switch">
+                    <input type="checkbox" name="sms" value="sms">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div>
+                <span>Emailing</span>
+                <label class="switch">
+                    <input type="checkbox" name="emailing" value="emailing">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div>
+                <span>Mailing</span>
+                <label class="switch">
+                    <input type="checkbox" name="mailing" value="mailing">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </section>
+        <section class="mb-8">
+            <input type="checkbox" name="agree" value="agree">
+            <span>
+                I have read and understand the above term and conditions and hereby agree that I will be bounded by these conditions and polocies once I
+                have submitted this application form.
+            </span>
+        </section>
+        <button id="submit"class="btn gold pull-right mb-8">
+            CREATE CUSTOMER
+        </button>
+    </form>
+    </div>
+    
+    <footer class="mb-8">
+        <span>V1.0.7</span>
+    </footer>
+</body>
+</html>
